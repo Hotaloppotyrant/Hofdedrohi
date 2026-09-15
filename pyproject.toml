@@ -1,2 +1,18 @@
-[tool.vercel]
-entrypoint = "app:app"
+[project]
+name = "simran-hosting-bot"
+version = "2.1"
+description = "Telegram Bot Hosting Panel"
+requires-python = ">=3.11"
+dependencies = [
+    "pyTelegramBotAPI",
+    "requests",
+    "cryptography",
+    "flask",
+    "APScheduler",
+    "PyGithub",
+    "psutil",
+    "Pillow",
+]
+
+[tool.uv]
+package = false
